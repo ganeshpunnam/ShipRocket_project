@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ArrowRight, MoveUpRight, Quote } from "lucide-react";
+import { ArrowRight, ArrowLeft, MoveUpRight, Quote } from "lucide-react";
 import Marquee from "react-marquee-slider";
 
 const images = [
@@ -76,7 +76,9 @@ function Testimonials() {
   }, []);
 
   return (
-    <div className="px-10 w-full h-screen sm:px-15 py-15 leading-6 flex flex-col gap-8">
+    <div className="px-10 w-full h-auto sm:px-15 py-15 leading-6 flex flex-col gap-8">
+      {/* New Section Above Testimonials */}
+    
       {/* Section 1 */}
       <div>
         <h1 className="text-3xl md:text-5xl text-indigo-950 font-bold mb-4">
@@ -90,12 +92,13 @@ function Testimonials() {
         </h2>
         <p className="text-md sm:text-xl text-gray-600 mb-6">
           Use one platform to manage everything, including your sales channels,
-          inventory, catalogues, carriers and customer data
+          inventory, catalogues, carriers, and customer data
         </p>
         <button className="bg-indigo-500 hover:bg-indigo-600 px-5 py-2 rounded-md text-white mb-12">
           Sign up for free
         </button>
 
+        {/* Existing Grid of Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 flex flex-col gap-6 rounded-lg bg-sky-50">
             <img
@@ -160,7 +163,7 @@ function Testimonials() {
           </span>
         </h1>
         <p className="text-md sm:text-xl text-gray-600 mb-6">
-          Integrate 12+ sales channels to easily manage your orders, inventory
+          Integrate 12+ sales channels to easily manage your orders, inventory,
           and more.
         </p>
         <a
@@ -198,25 +201,32 @@ function Testimonials() {
         </div>
       </div>
 
-      {/* Section 3 */}
-      <div>
+      {/* Section 3 - Testimonials */}
+      <div className="mt-12">
+        <div className="flex items-category justify-between">
         <h1 className="text-3xl md:text-5xl text-indigo-950 font-bold mb-4">
           <span className="text-transparent bg-gradient-to-r from-amber-300 to-violet-700 bg-clip-text">
             Why we do
           </span>{" "}
           What we do
         </h1>
-        <section className="bg-white dark:bg-gray-900">
-          <div className="flex justify-end items-center mt-4">
-            <button onClick={handlePrev} className="mr-4">
-              <ArrowRight className="w-6 h-6" />
+        <div className="flex gap-5 mt-4">
+            {/* Left Arrow */}
+            <button onClick={handlePrev} className="rounded-full p-4 shadow-lg ml-4">
+              <ArrowLeft className="w-6 h-6" />
             </button>
-            <button onClick={handleNext}>
+
+            {/* Right Arrow */}
+            <button onClick={handleNext}className="rounded-full p-4 shadow-lg ml-4">
               <ArrowRight className="w-6 h-6" />
             </button>
           </div>
+        </div>
+       
+        <section className="bg-white dark:bg-gray-900">
+          
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-            <div className="relative mx-auto max-w-screen-lg">
+            <div className=" mx-auto max-w-screen-lg">
               <figure className="w-full h-60 flex flex-col justify-center items-center gap-5 rounded-lg">
                 <img
                   src="https://sr-website.shiprocket.in/wp-content/uploads/2023/02/quoteLeft.svg"

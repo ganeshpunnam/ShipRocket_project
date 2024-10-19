@@ -42,7 +42,8 @@ export default function DriveRepeatPurchases() {
   ];
 
   return (
-    <div className=" px-4 py-12">
+    <div className=" px-4 py-12 ">
+      <div className="max-w-[1050px] mx-auto">
       <span className=" text-3xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
       Conversion
         </span>
@@ -57,7 +58,8 @@ export default function DriveRepeatPurchases() {
           />
         ))}
       </div>
-      <div className="relative bg-purple-700 text-white w-full rounded-tr-6xl">
+      </div>
+      <div className="relative bg-purple-700 text-white w-full rounded-tr-6xl mt-10">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       <div>

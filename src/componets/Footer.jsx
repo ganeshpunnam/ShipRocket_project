@@ -30,12 +30,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-indigo-900 text-gray-700">
+    <footer className="bg-indigo-900 text-gray-700 mt-10">
       <div className="w-full rounded-b-[80px] p-8 bg-white container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Left Section: Logo and Reach Us */}
         <div className="space-y-6">
           <div className="space-y-4">
-            <img src="https://sr-website.shiprocket.in/wp-content/uploads/2023/01/shiprocket_logo.svg" alt="Logo" className="w-32" /> {/* Add your logo */}
+            <img src="https://sr-website.shiprocket.in/wp-content/uploads/2023/01/shiprocket_logo.svg" alt="Logo" className="w-32" />
             <div className="flex space-x-4 text-violet-500">
               <a href="#"><Facebook className="text-violet-500" /></a>
               <a href="#"><Twitter className="text-violet-500" /></a>

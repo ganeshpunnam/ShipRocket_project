@@ -16,7 +16,8 @@ import Testimonials from './componets/Testimonials';
 function App() {
   return (
     <div className='w-full'>
-        <div className='sticky top-0 z-50'>
+     
+        <div className='sticky top-0 z-50 bg-white'>
           <Header />
 
         </div>
@@ -24,7 +25,6 @@ function App() {
         < Herosectionship />
         </div>
         <MarqueeSlider/>
-      {/* <Testimonials/> */}
     
       <div className="max-w-[1050px] mx-auto">
 
@@ -35,7 +35,7 @@ function App() {
         <FulfillmentService />
         </div>
         <DriveRepeatPurchases />
-       
+        <Testimonials/>
        
         <BlogSection />
       <Footer />

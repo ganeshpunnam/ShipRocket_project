@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="bg-white container mx-auto px-4 py-4 flex items-center justify-between sticky z-50">
-      <div className="flex items-center gap-20 justify-between max-w-[800px] w-full">
+      <div className="flex items-center gap-20 justify-between w-full">
         {/* Logo */}
         <img
           src="https://sr-website.shiprocket.in/wp-content/uploads/2023/01/shiprocket_logo.svg"
@@ -43,7 +43,8 @@ const Header = () => {
         <button className="px-4 py-2 text-gray-600 whitespace-nowrap hover:text-gray-900">
           Log In
         </button>
-        <button className="px-4 py-2 bg-purple-400 whitespace-nowrap text-white rounded-xl text-lg hover:bg-white hover:text-black hover:border-solid hover:border-2 hover:border-purple-600">
+        {/* Hide "Try for Free" button in mobile view */}
+        <button className="hidden md:block px-4 py-2 bg-purple-400 whitespace-nowrap text-white rounded-xl text-lg hover:bg-white hover:text-black hover:border-solid hover:border-2 hover:border-purple-600">
           Try for Free
         </button>
 

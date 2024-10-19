@@ -4,8 +4,8 @@ import VerticalMarqueeSlider from "./VerticalMarquee2";
 
 export default function Herosectionship() {
   return (
-    <div className=" relative -z-50: px-[30px]">
-    <main className=" header-ske container mx-auto px-4 py-8 md:pb-16 flex flex-col md:flex-row items-center md:justify-between ">
+    <div className="relative -z-50 px-[30px]">
+      <main className="header-ske container mx-auto px-4 py-8 md:pb-16 flex flex-col md:flex-row items-center md:justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-6xl md:text-7xl font-bold mb-4">
             <span className="gradient-text text-7xl">Ship your</span>
@@ -20,9 +20,10 @@ export default function Herosectionship() {
             Sign up for free
           </button>
         </div>
-        <div className="md:w-1/2 overflow-hidden flex items-center  justify-end">
+        <div className="md:w-1/2 overflow-hidden flex items-center justify-end">
           <VerticalMarquee />
-         <VerticalMarqueeSlider/>
+          {/* Hide VerticalMarqueeSlider in mobile view */}
+          <VerticalMarqueeSlider className="hidden md:block" />
         </div>
       </main>
     </div>
