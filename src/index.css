@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.gradient-text {
+  background: linear-gradient(99deg, #ffc465 0%, #5338ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.skewed-gradient {
+  --gradient-color-1: #b5f6d4;
+  --gradient-color-2: #f5cbbe;
+  --gradient-color-3: #cda2fc;
+  --gradient-color-4: #fbf1f8;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    var(--gradient-color-1),
+    var(--gradient-color-2),
+    var(--gradient-color-3),
+    var(--gradient-color-4)
+  );
+
+  transform-origin: 0 100%;
+  transform: skewY(-3deg);
+}
+
+.header-ske {
+  transform-origin: 0 100%;
+  transform: skewY(3.3deg);
+}
+.skewed-gradient2{
+  --gradient-color-1: #b5f6d4;
+  --gradient-color-2: #f5cbbe;
+  --gradient-color-3: #cda2fc;
+  --gradient-color-4: #fbf1f8;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    var(--gradient-color-1),
+    var(--gradient-color-2),
+    var(--gradient-color-3),
+    var(--gradient-color-4)
+  );
 }
