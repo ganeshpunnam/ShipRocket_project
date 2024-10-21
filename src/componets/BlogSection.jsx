@@ -23,7 +23,7 @@ export default function BlogSection() {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-4">
       <h2 className="text-4xl font-bold mb-8">
         Check out our <span className="text-purple-500">blog</span>
       </h2>

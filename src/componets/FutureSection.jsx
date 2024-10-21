@@ -45,18 +45,19 @@ export default function ShippingOptions() {
         />
       </div>
        {/* Announcement Section */}
-    <div className="flex items-center justify-center gap-4 p-4 border border-blue-200 rounded-lg bg-blue-50 mt-6">
-      <div className="flex items-center space-x-3">
-        <span className="text-3xl">📢</span>
-        <p className="text-sm text-blue-900">
-          Experience Shiprocket in real-time with our live demo.
-          <strong> Sign-up not required for demo</strong>
-        </p>
-      </div>
-      <a href="#" className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center">
-        Check Live Demo <span className="ml-2">→</span>
-      </a>
-    </div>
+       <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 border border-blue-200 rounded-lg bg-blue-50 mt-6">
+  <div className="flex items-center space-x-3">
+    <span className="text-3xl">📢</span>
+    <p className="text-sm text-blue-900 text-center md:text-left">
+      Experience Shiprocket in real-time with our live demo.
+      <strong> Sign-up not required for demo</strong>
+    </p>
+  </div>
+  <a href="#" className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center">
+    Check Live Demo <span className="ml-2">→</span>
+  </a>
+</div>
+
     </div>
   );
 }

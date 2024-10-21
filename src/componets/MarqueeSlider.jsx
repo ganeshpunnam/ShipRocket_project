@@ -30,7 +30,7 @@ export default function MarqueeSlider() {
           }
         }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
+          animation: marquee 5s linear infinite;
         }
       `}</style>
     </div>

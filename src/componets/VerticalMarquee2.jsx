@@ -1,13 +1,11 @@
 import React from "react";
 import DynamicMetricDisplay from "./DynamicMetricDisplay";
 
-
-export default function VerticalMarqueeSlider() {
-
+export default function VerticalMarqueeSlider({ className }) {
   return (
-    <div className="h-[500px] w-full overflow-hidden bg-transparent  flex flex-col items-end">
+    <div className={`h-[500px] w-full overflow-hidden bg-transparent flex flex-col items-end ${className}`}>
       <div className="animate-marquee-vertical max-w-[700px] w-full">
-        <div className="flex flex-col gap-4 items-end justify-center py-4 ">
+        <div className="flex flex-col gap-4 items-end justify-center py-4">
           <img
             src="https://sr-website.shiprocket.in/wp-content/uploads/2023/07/home-slider-image-21.webp"
             alt="Shiprocket Logo"
@@ -18,14 +16,13 @@ export default function VerticalMarqueeSlider() {
             alt="Shiprocket Logo"
             className="w-[200px] h-auto mr-8"
           />
-          <DynamicMetricDisplay/>
+          <DynamicMetricDisplay />
           <img
             src="https://sr-website.shiprocket.in/wp-content/uploads/2023/07/home-slider-image-20.webp"
             alt="Shiprocket Logo"
-            className="w-[250px]h-auto mr-8"
+            className="w-[250px] h-auto mr-8"
           />
         </div>
-        
         <div className="flex flex-col gap-4 py-4 items-end justify-center">
           <img
             src="https://sr-website.shiprocket.in/wp-content/uploads/2023/07/home-slider-image-7.webp"
